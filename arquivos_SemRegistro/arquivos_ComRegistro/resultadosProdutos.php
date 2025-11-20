@@ -56,20 +56,25 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
             
    
             <li><a href="dicas.php"><i class="fas fa-lightbulb"></i> Dicas </a></li> <!-- NOVO BOTÃO DICAS -->
-                <li class="user-menu">
-          <button class="user-menu-button" >
-           <a href="perfil.php" ><i class="fas fa-user"></i> <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?> </a>
-          </button>
-          
-      
-        </li>
-        <!-- <li><a href="#"><i class="fa fa-bell" id="notificacoesIcone"></i> Notificações </a></li> -->
-        <li><a href="sobre.php"><i class="fa-solid fa-circle-info"></i> Sobre </a></li>
-        <li> 
-          <a href="logout.php" class="sair-link">
-            <i class="fas fa-sign-out-alt"></i> Deslogar
-          </a>
-        </li>
+            <li class="user-menu">
+              <button class="user-menu-button">
+                <i class="fas fa-user"></i> <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?> <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="user-dropdown">
+                <a href="perfil.php" id="openProfileModal"><i class="fas fa-user-cog"></i> Meu Perfil</a>
+                <a href="favorito.php"><i class="fas fa-heart"></i> Favoritos</a>
+                <a href="historicos.php"><i class="fas fa-history"></i> Histórico</a>
+              </div>
+            </li>
+            <!-- <li><a href="favorito.php"><i class="fas fa-heart"></i> Favoritos </a></li>
+            <li><a href="historicos.php"><i class="fas fa-history"></i> Historico </a></li> -->
+            <!-- <li><a href="#"><i class="fa fa-bell" id="notificacoesIcone"></i> Notificações </a></li> -->
+            <li><a href="sobre.php"><i class="fa-solid fa-circle-info"></i> Sobre </a></li>
+            <li> 
+              <a href="logout.php" class="sair-link">
+                <i class="fas fa-sign-out-alt"></i> Deslogar
+              </a>
+            </li>
             <li class="modoEscuroClaroElemento" id="modoEscuroClaroElementoId">
                 <a><i class="fas fa-moon"></i> Modo </a>
             </li>  
@@ -164,6 +169,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
     
 
     <script src="../script.js"></script>
+    <script src="index_php.js"></script>
     <script src="resultadosProdutos.js" type="module"></script>
     <script src="../theme.js"></script>
     <script src="../campoDePesquisa_URL_Produtos.js"></script>

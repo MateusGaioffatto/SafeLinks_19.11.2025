@@ -1,7 +1,7 @@
 
 // const menuHamburguerElemento = document.getElementById("menuHamburguerElementoId");
 // const navBarLinks = document.getElementById("historicoNavBarLinksID");
-const homePageWindowLargura = window.matchMedia("(max-width: 768px)");
+// const homePageWindowLargura = window.matchMedia("(max-width: 768px)");
 // let navBarClickContagem = 0;
 
 // // MENU HAMBURGUER: FUNÇÕES

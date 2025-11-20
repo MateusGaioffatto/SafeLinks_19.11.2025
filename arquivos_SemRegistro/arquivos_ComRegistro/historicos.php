@@ -41,7 +41,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
     <nav class="navBarElemento" id="navBarElementoId">
         <div class="navBarContainer">
             <div class="navBarLogo"><a href="index.php">SafeLinks</a></div>
-            <ul class="navBarLinks" id="historicoNavBarLinksID">
+            <ul class="navBarLinks" id="navBarLinksId">
                 <li class="user-menu">
                     <button class="user-menu-button" >
                         <a href="perfil.php" ><i class="fas fa-user"></i> <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?> </a>
@@ -79,6 +79,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
 
 
 <!-- Modifique a parte do botão de pesquisa no histórico -->
+<script src="../script.js"></script>
 <script src="../theme.js"></script>
 <script src="index_php.js"></script>
 <script src="historicoScript.js"></script>

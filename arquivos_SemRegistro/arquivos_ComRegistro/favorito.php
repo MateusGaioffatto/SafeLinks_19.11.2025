@@ -76,7 +76,7 @@
     </div>
 
 
-
+    <script src="../script.js"></script>
     <script src="favoritosScript.js"></script>
     <script src="../theme.js"></script>
 </body>
