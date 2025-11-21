@@ -80,21 +80,21 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
         </nav>
         
         <div class="perfilDados" id="perfilDadosID">
-            <p class="voltarPerfilUlTexto" id="voltarPerfilUlTextoID"></p>
+            <!-- <p class="voltarPerfilUlTexto" id="voltarPerfilUlTextoID"></p>
             <div class="voltarPerfilUl" id="voltarPerfilUlID">
                 <i class="fa-solid fa-angle-left"></i>
                 VOLTAR
-            </div>
+            </div> -->
             
             <!-- Seção Meus Dados -->
             <div class="section-content" id="section-dados" style="display: none;">
                 <div class="container mt-4">
-                    <h2 class="mb-4"><i class="fa-regular fa-id-card me-2"></i>Meus Dados</h2>
+                    <h2 class="mb-4" style="text-align: center;"><i class="fa-regular fa-id-card me-2"></i>Meus Dados</h2>
                     
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <form id="profileFormPerfil">
-                                <div class="row">
+                                <div class="row" style="display: flex; justify-content: center;">
                                     <div class="col-md-6 mb-3">
                                         <label for="profileName" class="form-label">Nome</label>
                                         <input type="text" class="form-control" id="profileName" 
@@ -107,7 +107,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
                                     </div>
                                 </div>
                                 
-                                <div class="row">
+                                <div class="row" style="display: flex; justify-content: center;">
                                     <div class="col-md-6 mb-3">
                                         <label for="profilePassword" class="form-label">Nova Senha</label>
                                         <input type="password" class="form-control" id="profilePassword" 
@@ -121,7 +121,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
                                     </div>
                                 </div>
                                 
-                                <div class="d-flex gap-2 mt-4">
+                                <div class="d-flex gap-2 mt-4" style="justify-content: center;">
                                     <button type="submit" class="btn btn-primary">
                                         <i class="fas fa-save me-2"></i>Salvar Alterações
                                     </button>

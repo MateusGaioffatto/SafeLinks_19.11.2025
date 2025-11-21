@@ -39,11 +39,11 @@ perfilNavbarEsquerdoPerfilLi.forEach(li => {
         const sectionId = li.getAttribute('data-section');
         const targetSection = document.getElementById(`section-${sectionId}`);
         if (targetSection) {
-            targetSection.style.display = 'block';
+            targetSection.style.display = 'flex';
         }
         
         if (perfilLiClick === 1) {
-            perfilDados.style.display = 'grid';
+            perfilDados.style.display = 'flex';
             if (window.innerWidth <= 500) {
                 perfilNavbarEsquerdo.style.display = "none";
                 voltarPerfilUl.addEventListener('click', function() {
